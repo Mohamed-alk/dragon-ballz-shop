@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+        border: 10px rgb(0, 255, 0) double ;
+        background-color: black;
+        color: white;
+        text-align: center;
+        }
+        nav{
+            display: flex;
+              height: 40px;
+              justify-content: center;
+        }
+        nav a{
+        display: flex;
+        text-decoration: none;
+        font-size: larger;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 2.0s;
+        transition: color 2.0s;
+        }
+        nav a:hover{
+            background-color: rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        @media (max-width: 400px ) {
+            nav{
+               flex-direction: column;
+                height: 100px;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1 id = name ></h1>
+        <h2 id = age ></h2>
+        <nav>
+            <a href="index.html">battle pack</a>
+            <a href="power up pack.html">power up pack</a>
+        </nav>
+    </header>
+    <script>
+        document.getElementById("name").innerHTML = "my name is mohamed"
+       const h1start = "<h1>" ;
+       const h1ending = "</h1>" ;
+       var welcomemessage = 
+       "<center>" + h1start + "welcome to my web application " + h1ending
+   document.write(welcomemessage)
+   // let is a Keyword, mohamed is a variable, 10 is a Value & Lietral
+     let mohamed = 10
+   var first_name =" my" ;
+   let middlelname ="'s age is ";
+   document.write(first_name + " " + middlelname + mohamed + "<br>" + "😎" )
+   </script>
+</body>
+</html>
